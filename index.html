@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>zooApp</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="header__bar">
+                <a class="bar__logo" href="#"><img src="./images/logo-light.png" alt="logo"></a>
+                <div class="links">
+                    <a class="bar__link active" href="#">About</a>
+                    <a class="bar__link" href="#">Zoos</a>
+                    <a class="bar__link" href="#">Map</a>
+                    <a class="bar__link" href="#">Contact Us</a>
+                    <a class="bar__link" href="#">Design</a>
+                </div>
+                <label class="switch">
+                    <input id="toggler" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="first-screen">
+            <div class="first-screen__text">
+                <h1 class="first-screen__title">Watch your favorite animal online</h1>
+                <button class="main-button" type="button">
+                    <div class="button-content">
+                        <img src="./images/play-icon.svg" alt="play-icon">
+                        <p class="button-text">Watch online</p>
+                    </div>
+                </button>
+            </div>
+            <div class="gallery">
+                <div class="animals-slider">
+                    <div class="animals-img eagle"></div>
+                    <div class="animals-img panda"></div>
+                    <div class="animals-img monkey"></div>
+                    <div class="animals-img croco"></div>
+                    <div class="animals-img fox"></div>
+                </div>
+                <div class="pagination">
+                    <label class="pagination__text">02/<span class="from">08</span></label>
+                    <input type="range" min="1" max="8" value="2" step="1">
+                </div>
+            </div>
+            <div class="media header">
+                <a href="#"><img src="./images/instagram-icon.svg" alt="instagram-icon"></a>
+                <a href="#"><img src="./images/twitter-icon.svg" alt="twitter-icon"></a>
+                <a href="#"><img src="./images/youtube-icon.svg" alt="youtube-icon"></a>
+                <a href="#"><img src="./images/vk-icon.svg" alt="vk-icon"></a>
+            </div>
+        </div>
+        <div class="second-screen">
+            <h2 class="dark-title">How it works?</h2>
+            <p class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                precious
+                species and their habitat, and we are determined to assist in all aspects, including providing
+                veterinary support and raising much-needed emergency funds. Zoo Online saves wildlife and inspires
+                everyone to make conservation a priority in their lives. Animals have the right to a pain-free and happy
+                life. They have equal claim to the resources of this planet, and deserve a life of dignity and
+                compassion.As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                precious species and their habitat.</p>
+            <img src="./images/deers.png" alt="deers">
+            <div class="pagination second-pag">
+                <label class="pagination__text second-pag-text">01/<span class="from">04</span></label>
+                <input class="second-pag-thumb" type="range" min="1" max="4" value="1" step="1">
+            </div>
+            <button class="main-button second-screen__button" type="button">
+                <div class="button-content">
+                    <img src="./images/play-icon.svg" alt="play-icon">
+                    <p class="button-text">Watch online</p>
+                </div>
+            </button>
+        </div>
+        <div class="third-screen">
+            <div class="info">
+                <div class="info-card">
+                    <img src="./images/icon-inspiration.png" alt="inspiration-icon">
+                    <h4>What inspires us?</h4>
+                    <p>As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on
+                        precious species and their habitat, and we are determined to assist in all aspects.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./images/mission-icon.png" alt="mission-icon">
+                    <h4>Our mission</h4>
+                    <p>Zoo Online saves wildlife and inspires everyone to make conservation a priority in their lives.
+                    </p>
+                </div>
+                <div class="info-card">
+                    <img src="./images/love-icon.png" alt="love-icon">
+                    <h4>What we believe in?</h4>
+                    <p class="text">Animals have the right to a pain-free and happy life. They have equal claim to the
+                        resources of this planet, and deserve a life of dignity and compassion.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-screen">
+            <h2 class="dark-title">Pets in Zoo</h2>
+            <div class="pets-stider">
+                <div class="left arrow" onclick="plusSlides(-1)"></div>
+                <div class="pets-img panda"></div>
+                <div class="pets-img monkey"></div>
+                <div class="pets-img eagle"></div>
+                <div class="pets-img croco"></div>
+                <div class="right arrow" onclick="plusSlides(1)"></div>
+            </div>
+            <div class="pagination second-pag">
+                <label class="pagination__text second-pag-text">01/<span class="from">08</span></label>
+                <input class="second-pag-thumb" type="range" min="1" max="8" value="1" step="1">
+            </div>
+            <button class="main-button second-screen__button" type="button">
+                <p class="button-text fourth-screen__button">Choose your favorite</p>
+            </button>
+        </div>
+        <div class="fifth-screen">
+            <h2 class="dark-title">Pay and feed</h2>
+            <p class="text">The opportunity to easily and naturally (but as often as possible) donate to the needs of animals that
+                you like.</p>
+            <div class="cards">
+                <div class="card visa">
+                    <img src="./images/visa-card-icon.svg" alt="visa-card-icon">
+                    <h4 class="card-title">You pay with a VISA card</h4>
+                </div>
+                <img src="./images/arrow-green.svg" alt="arrow-green">
+                <div class="card zoo">
+                    <img src="./images/zoo-icon.svg" alt="zoo-icon">
+                    <h4 class="card-title">You pay with a VISA card</h4>
+                </div>
+                <img src="./images/arrow-green.svg" alt="arrow-green">
+                <div class="card bamboo">
+                    <img src="./images/panda-icon.svg" alt="panda-icon">
+                    <h4 class="card-title">You pay with a VISA card</h4>
+                </div>
+            </div>
+            <button class="main-button second-screen__button" type="button">
+                <p class="button-text fourth-screen__button">Donate</p>
+            </button>
+        </div>
+        <div class="fourth-screen sixth-screen">
+            <h2 class="dark-title">Testimonials</h2>
+            <div class="pets-stider testimonial-stider">
+                <div class="left arrow" onclick="plusSlides(-1)"></div>
+                <div class="testimonial nastya">
+                    <img src="./images/testimonial-icon.svg" alt="testimonial-icon">
+                    <h4>Nastya Sidorova</h4>
+                    <p class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                </div>
+                <div class="testimonial vlad">
+                    <img src="./images/vlad-photo.png" alt="vlad-kim-photo">
+                    <h4>Vlad Kim</h4>
+                    <p class="text">As a voice for wildlife, we are devastated by the impact of the 2020 Australian bushfires on precious species and their habitat.</p>
+                </div>
+                <div class="right arrow" onclick="plusSlides(1)"></div>
+            </div>
+            <div class="pagination second-pag">
+                <label class="pagination__text second-pag-text">02/<span class="from">08</span></label>
+                <input class="second-pag-thumb" type="range" min="1" max="8" value="2" step="1">
+            </div>
+            <button class="main-button second-screen__button" type="button">
+                <p class="button-text fourth-screen__button">Leave feedback</p>
+            </button>
+        </div>
+        <div class="seventh-screen">
+            <h2 class="dark-title">Map</h2>
+            <img class="seventh-screen__map" src="./images/map.png" alt="animal-map">
+            <div class="animal-description">
+                <img src="./images/west-eagle.png" alt="west-eagle">
+                <div class="animal-info">
+                    <h4>West End Bald Eagle</h4>
+                    <div class="animal-text">
+                        <p style="font-weight: 500;">Region:</p><p>on an island near Los Angeles</p>
+                    </div>
+                    <div class="animal-text">
+                        <p style="font-weight: 500;">Population:</p><p>more than 270 pairs in 2013</p>
+                    </div>
+                </div>
+            </div>
+            <button class="main-button" type="button">
+                <div class="button-content">
+                    <img src="./images/play-icon.svg" alt="play-icon">
+                    <p class="button-text">Watch online</p>
+                </div>
+            </button>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__bar">
+                <a class="bar__logo footer__logo" href="#"><img src="./images/logo-dark.png" alt="logo"></a>
+                <div class="footer__links">
+                    <a class="bar__link" href="#">About</a>
+                    <a class="bar__link" href="#">Zoos</a>
+                    <a class="bar__link" href="#">Map</a>
+                    <a class="bar__link" href="#">Design</a>
+                </div>
+                <button class="main-button second-screen__button footer__button" type="button">
+                    <p class="button-text fourth-screen__button">donate for volunteers</p>
+                </button>
+                <div class="form">
+                    <h2>Contact us</h2>
+                    <input type="text" id="name" name="username" value="Name"/>
+                    <input type="email" id="mail" name="usermail" value="Email"/>
+                    <fieldset>
+                        <legend>Please enter your message</legend>
+                        <textarea id="message" name="usermessage" rows="7"></textarea>
+                    </fieldset>
+                    <input type="checkbox" id="agreement" name="agreement" />
+                    <label for="agreement">I agree to the processing of Personal Data</label>
+                    <button class="form-button">Send
+                        <img src="./images/button-arrow.svg" alt="button-arrow">
+                    </button>
+                </div>
+                <div class="contacts-block">
+                    <p class="contacts-title">ZOO Online Centre</p>
+                    <p>132, Address District, Street</p>
+                    <p style="margin-bottom: 20px;">Open Daily 10:00 am - 5:00 pm</p>
+                    <p>T(702) 163-3433</p>
+                    <p style="margin-bottom: 20px;">zoo.online@gmail.com</p>
+                    <div class="media footer">
+                        <a href="#"><img src="./images/instagram-icon.svg" alt="instagram-icon"></a>
+                        <a href="#"><img src="./images/twitter-icon.svg" alt="twitter-icon"></a>
+                        <a href="#"><img src="./images/youtube-icon.svg" alt="youtube-icon"></a>
+                        <a href="#"><img src="./images/vk-icon.svg" alt="vk-icon"></a>
+                    </div>
+                </div>
+            </div>        
+            <hr>
+            <p>©Noora Sagnayeva</p>
+            <p>©RSSchool and ©Yem Digital - 2021</p>
+        </div>
+    </footer>
+</body>
+</html>
