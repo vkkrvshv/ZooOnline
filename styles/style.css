@@ -1116,15 +1116,12 @@ hr {
                             "info info";
         gap: 30px 0;   
         grid-template-columns: 325px 1fr;
+        margin-bottom: 71px;
     }
 
     .footer__links {
         flex-direction: column;
         gap: 5px;
-    }
-
-    .media.footer {
-        margin-bottom: 71px;
     }
 
 }
@@ -1410,7 +1407,7 @@ hr {
     }
 
     footer {
-        min-height: 1200px;
+        min-height: 1240px;
     }
 
     .footer__bar {
@@ -1420,7 +1417,7 @@ hr {
                             "info"
                             "btn";
         gap: 35px;
-        margin-bottom: 0;
+        margin-bottom: 80px;
     }
 
     .footer__links {
@@ -1437,6 +1434,6 @@ hr {
     }
 
     .footer__button {
-        margin:0 0 80px 0;
+        margin:0;
     }
 }
