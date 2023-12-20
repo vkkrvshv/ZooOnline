@@ -468,11 +468,12 @@ h4 {
     font-size: 0.875rem;
     position: relative;
     left: 23px;
-    top: 65%;
+    top: 14.5rem;
 }
 
 .pets-img > .pets-img-text {
     left: 0;
+    top: 16.5rem;
 }
 
 .pets-img-btns {
@@ -883,6 +884,10 @@ hr {
         height: 301px;
     }
 
+    .pets-img > .pets-img-text {
+        top: 12.5rem;
+    }
+
     .pets-slider {
         gap: 20px;
     }
@@ -917,6 +922,10 @@ hr {
 
 /*! TABLET */
 @media screen and (min-width:640px) and (max-width:1200px) {
+
+    .header__bar {
+        padding-top: 24px;
+    }
 
     .container {
         min-width: 600px;
@@ -1048,6 +1057,10 @@ hr {
         gap: 7px;
     }
 
+    .pets-img > .pets-img-text {
+        top: 12.5rem;
+    }
+
     .fourth-screen {
         min-height: 640px;
     }
@@ -1122,9 +1135,14 @@ hr {
     main > * {
         overflow: hidden;
     }
+
     .container {
         min-width: 300px;
         margin: 0 10px;
+    }
+
+    .header__bar {
+        padding-top: 24px;
     }
 
     h2 {
@@ -1190,8 +1208,8 @@ hr {
     .animals-img > .pets-img-text {
         font-size: 12px;
         width: 128px;
-        top: 35%;
-        left: 5%;
+        top: 4.5rem;
+        left: 0.7rem;
     }
 
     .animals-img > .pets-img-btns {
@@ -1293,6 +1311,10 @@ hr {
         height: 301px;
     }
 
+    .pets-img > .pets-img-text {
+        top: 12.5rem;
+    }
+
     .pets-img-btns {
         gap: 7px;
     }
@@ -1388,7 +1410,7 @@ hr {
     }
 
     footer {
-        min-height: 1240px;
+        min-height: 1200px;
     }
 
     .footer__bar {
@@ -1398,6 +1420,7 @@ hr {
                             "info"
                             "btn";
         gap: 35px;
+        margin-bottom: 0;
     }
 
     .footer__links {
