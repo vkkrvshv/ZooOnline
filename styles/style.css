@@ -808,6 +808,7 @@ hr {
     height: 20px;
     justify-content: center;
     align-items: center;
+    top: 0;
 }
 
 .contacts-title {
