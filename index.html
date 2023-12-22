@@ -13,13 +13,13 @@
     <header>
         <div class="container">
             <nav class="header__bar">
-                <a class="bar__logo" href="#"><img src="./images/logo-light.png" alt="logo"></a>
+                <a class="bar__logo" href="index.html"><img src="./images/logo-light.png" alt="logo"></a>
                 <div class="links">
-                    <a class="bar__link active" href="#">About</a>
+                    <a class="bar__link active" href="index.html">About</a>
                     <a class="bar__link" href="#">Zoos</a>
-                    <a class="bar__link" href="#">Map</a>
-                    <a class="bar__link" href="#">Contact Us</a>
-                    <a class="bar__link" href="#">Design</a>
+                    <a class="bar__link" href="#map">Map</a>
+                    <a class="bar__link" href="#contact-us">Contact Us</a>
+                    <a class="bar__link" href="#design">Design</a>
                 </div>
                 <label class="switch">
                     <input id="toggler" type="checkbox">
@@ -30,6 +30,13 @@
                     <label for="burger-checkbox" class="burger">
                         <img src="./images/burger-menu.svg" alt="burger-menu-icon">
                     </label>
+                    <div class="links burger-links">
+                        <a class="bar__link active" href="#">About</a>
+                        <a class="bar__link" href="#">Zoos</a>
+                        <a class="bar__link" href="#map">Map</a>
+                        <a class="bar__link" href="#contact-us">Contact Us</a>
+                        <a class="bar__link" href="#design">Design</a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -134,7 +141,7 @@
                 <div class="right arrow" onclick="plusSlides(1)"></div>
             </div>
             <div class="pagination second-pag">
-                <label class="pagination__text second-pag-text">01/<span class="from">08</span></label>
+                <label class="pagination__text second-pag-text pets-pag">01/<span class="from">08</span></label>
                 <input class="second-pag-thumb" type="range" min="1" max="8" value="1" step="1">
             </div>
             <button class="main-button second-screen__button" type="button">
@@ -189,7 +196,7 @@
                 <p class="button-text fourth-screen__button">Leave feedback</p>
             </button>
         </div>
-        <div class="seventh-screen">
+        <div class="seventh-screen" id="map">
             <h2 class="dark-title">Map</h2>
             <img class="seventh-screen__map" src="./images/map.png" alt="animal-map">
             <div class="animal-description">
@@ -215,18 +222,18 @@
     <footer>
         <div class="container">
             <div class="footer__bar">
-                <a class="bar__logo footer__logo" href="#"><img src="./images/logo-dark.png" alt="logo"></a>
+                <a class="bar__logo footer__logo" href="index.html"><img src="./images/logo-dark.png" alt="logo"></a>
                 <div class="footer__links">
-                    <a class="bar__link" href="#">About</a>
+                    <a class="bar__link" href="index.html">About</a>
                     <a class="bar__link" href="#">Zoos</a>
-                    <a class="bar__link" href="#">Map</a>
-                    <a class="bar__link" href="#">Design</a>
+                    <a class="bar__link" href="#map">Map</a>
+                    <a class="bar__link" href="#design">Design</a>
                 </div>
                 <button class="main-button second-screen__button footer__button" type="button">
                     <p class="button-text fourth-screen__button">donate for volunteers</p>
                 </button>
                 <div class="form">
-                    <h2>Contact us</h2>
+                    <h2 id="contact-us">Contact us</h2>
                     <input type="text" id="name" name="username" value="Name"/>
                     <input type="email" id="mail" name="usermail" value="Email"/>
                     <fieldset>
@@ -254,7 +261,7 @@
                 </div>
             </div>        
             <hr>
-            <p>©Noora Sagnayeva</p>
+            <p id="design">©Noora Sagnayeva</p>
             <p>©RSSchool and ©Yem Digital - 2021</p>
         </div>
     </footer>
